@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Plugins/Cinch2D/Demos/8) Switching to 3D Camera/SwitchingTo3DCamera.unity
+  isLoaded: 1
+  isActive: 1

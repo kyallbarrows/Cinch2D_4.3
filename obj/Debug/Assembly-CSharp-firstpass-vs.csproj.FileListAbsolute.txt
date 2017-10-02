@@ -1,0 +1,1 @@
+\\psf\Home\Desktop\GameFrameRepo\GameFrame\obj\Debug\Assembly-CSharp-firstpass-vs.csprojResolveAssemblyReference.cache

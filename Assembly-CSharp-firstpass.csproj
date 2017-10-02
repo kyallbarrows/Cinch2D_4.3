@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{DC9F27D4-D768-9EE0-BF6A-7573F4851D6E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_4;UNITY_5_5;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_VIDEO;ENABLE_VR;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Plugins\Cinch2D\Code\Core\Events\CinchEvent.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Code\Core\Events\MouseEvent.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Code\Core\Input\MouseInput.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Code\Core\Library\FontCache.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Code\Core\Library\Library.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Code\Core\Library\ShaderCache.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Code\Core\Library\TextureCache.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Code\Core\Scene\GameClock.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Code\Core\Scene\Stage.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Code\Core\Sprite\CinchSprite.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Code\Core\Sprite\DisplayObjectContainer.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Code\Core\Sprite\EventDispatcher.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Code\Core\Sprite\EventPhase.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Code\Core\Sprite\PhysicsContainer.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Code\Core\Sprite\RegistrationPoint.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Code\Core\Sprite\SimpleTextField.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Code\Core\Util\CharacterSet.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Code\Core\Util\CinchOptions.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Code\Core\Util\Easing.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Code\Core\Util\PhysicsDebugDraw.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Code\Core\Util\Tween.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Code\Core\Util\TweenRunner.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Demos\1) Using the Stage\UsingTheStage.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Demos\10) 9-Slice Scaling\NineSliceScaling.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Demos\2) Working with Sprites\SmartCherry.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Demos\2) Working with Sprites\WorkingWithSprites.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Demos\3) Mouse Events\MouseEventsStage.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Demos\4) Sprite Sheets\SpriteSheets.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Demos\5) Instantiating Sprites\CreateObjects.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Demos\5) Instantiating Sprites\Watermelon.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Demos\6) Using Clocks\FloatingStrawberry.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Demos\6) Using Clocks\UsingClocks.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Demos\7) Text Fields\TextFields.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Demos\8) Switching to 3D Camera\SwitchingCamera.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Demos\8) Switching to 3D Camera\Teapot.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Demos\9) Physics\Physics.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Demos\DemoBase.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Demos\TextButton.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Collision\Collision.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Collision\Distance.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Collision\DynamicTree.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Collision\DynamicTreeBroadPhase.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Collision\IBroadPhase.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Collision\QuadTree.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Collision\QuadTreeBroadPhase.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Collision\Shapes\CircleShape.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Collision\Shapes\EdgeShape.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Collision\Shapes\LoopShape.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Collision\Shapes\PolygonShape.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Collision\Shapes\Shape.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Collision\TimeOfImpact.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\ConvexHull\ChainHull.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\ConvexHull\GiftWrap.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\ConvexHull\Melkman.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\Decomposition\BayazitDecomposer.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\Decomposition\CDT\Delaunay\DelaunayTriangle.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\Decomposition\CDT\Delaunay\Sweep\AdvancingFront.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\Decomposition\CDT\Delaunay\Sweep\AdvancingFrontNode.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\Decomposition\CDT\Delaunay\Sweep\DTSweep.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\Decomposition\CDT\Delaunay\Sweep\DTSweepConstraint.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\Decomposition\CDT\Delaunay\Sweep\DTSweepContext.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\Decomposition\CDT\Delaunay\Sweep\DTSweepPointComparator.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\Decomposition\CDT\Delaunay\Sweep\PointOnEdgeException.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\Decomposition\CDT\ITriangulatable.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\Decomposition\CDT\Orientation.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\Decomposition\CDT\Polygon\Polygon.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\Decomposition\CDT\Polygon\PolygonPoint.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\Decomposition\CDT\Polygon\PolygonSet.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\Decomposition\CDT\Sets\ConstrainedPointSet.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\Decomposition\CDT\Sets\PointSet.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\Decomposition\CDT\TriangulationConstraint.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\Decomposition\CDT\TriangulationContext.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\Decomposition\CDT\TriangulationMode.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\Decomposition\CDT\TriangulationPoint.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\Decomposition\CDT\TriangulationUtil.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\Decomposition\CDT\Util\FixedArray3.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\Decomposition\CDT\Util\FixedBitArray3.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\Decomposition\CDT\Util\PointGenerator.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\Decomposition\CDT\Util\PolygonGenerator.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\Decomposition\CDTDecomposer.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\Decomposition\EarclipDecomposer.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\Decomposition\FlipcodeDecomposer.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\Decomposition\SeidelDecomposer.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\FixedArray.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\HashSet.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\LineTools.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\Math.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\Path.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\PathManager.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\PhysicsLogic\Explosion.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\PhysicsLogic\PhysicsLogic.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\PolygonManipulation\CuttingTools.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\PolygonManipulation\SimplifyTools.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\PolygonManipulation\YuPengClipper.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\PolygonTools.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\TextureTools\MSTerrain.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\TextureTools\MarchingSquares.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\TextureTools\TextureConverter.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Common\Vertices.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Controllers\AbstractForceController.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Controllers\BuoyancyController.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Controllers\Controller.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Controllers\GravityController.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Controllers\SimpleWindForce.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Controllers\VelocityLimitController.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\DebugView.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Dynamics\Body.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Dynamics\BreakableBody.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Dynamics\ContactManager.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Dynamics\Contacts\Contact.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Dynamics\Contacts\ContactSolver.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Dynamics\Fixture.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Dynamics\Island.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Dynamics\Joints\AngleJoint.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Dynamics\Joints\DistanceJoint.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Dynamics\Joints\FixedAngleJoint.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Dynamics\Joints\FixedDistanceJoint.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Dynamics\Joints\FixedFrictionJoint.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Dynamics\Joints\FixedLineJoint.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Dynamics\Joints\FixedMouseJoint.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Dynamics\Joints\FixedPrismaticJoint.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Dynamics\Joints\FixedRevoluteJoint.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Dynamics\Joints\FrictionJoint.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Dynamics\Joints\GearJoint.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Dynamics\Joints\Joint1.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Dynamics\Joints\LineJoint.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Dynamics\Joints\PrismaticJoint.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Dynamics\Joints\PulleyJoint.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Dynamics\Joints\RevoluteJoint.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Dynamics\Joints\RopeJoint.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Dynamics\Joints\SliderJoint.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Dynamics\Joints\WeldJoint.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Dynamics\TimeStep.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Dynamics\World.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Dynamics\WorldCallbacks.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Factories\BodyFactory.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Factories\FixtureFactory.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Factories\JointFactory.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Factories\LinkFactory.cs" />
+     <Compile Include="Assets\Plugins\Cinch2D\Farseer\Settings.cs" />
+     <None Include="Assets\Plugins\Cinch2D\Resources\Shaders\Blackline.shader" />
+     <None Include="Assets\Plugins\Cinch2D\Resources\Shaders\TextShader.shader" />
+     <None Include="Assets\Plugins\Cinch2D\Resources\Shaders\Unlit-AlphaSelfIllum.shader" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PlaymodeTestsRunner">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

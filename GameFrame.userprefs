@@ -1,0 +1,12 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/administrator/Desktop/GameFrameRepo/GameFrame/Assets/Code/Demos/Tests/TestsStage.cs" line="153" />
+      <Breakpoint file="/Users/administrator/Desktop/GameFrameRepo/GameFrame/Assets/Code/Demos/Tests/TestsStage.cs" line="100" />
+      <Breakpoint file="/Users/administrator/Desktop/GameFrameRepo/GameFrame/Assets/Code/Core/MovieClip/DisplayObjectContainer.cs" line="922" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

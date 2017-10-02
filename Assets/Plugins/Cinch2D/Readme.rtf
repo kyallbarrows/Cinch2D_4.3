@@ -1,0 +1,101 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf510
+{\fonttbl\f0\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww13720\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\b\fs24 \cf0 Cinch2D\
+Copyright \'a9 2013 Pixel Heavy Industries LLC\
+
+\b0 \
+
+\b Attribution:\
+This package contains Ian Qvist's free, open-source Farseer port.  License Agreement:\
+\pard\pardeftab720
+
+\b0 \cf0 Farseer Physics Engine based on Box2D.XNA port:\
+Copyright (c) 2010 Ian Qvist\
+\
+Box2D.XNA port of Box2D:\
+Copyright (c) 2009 Brandon Furtwangler, Nathan Furtwangler\
+\
+Original source Box2D:\
+Copyright (c) 2006-2009 Erin Catto http://www.box2d.org \
+ \
+This software is provided 'as-is', without any express or implied \
+warranty.  In no event will the authors be held liable for any damages \
+arising from the use of this software. \
+Permission is granted to anyone to use this software for any purpose, \
+including commercial applications, and to alter it and redistribute it \
+freely, subject to the following restrictions: \
+1. The origin of this software must not be misrepresented; you must not \
+claim that you wrote the original software. If you use this software \
+in a product, an acknowledgment in the product documentation would be \
+appreciated but is not required. \
+2. Altered source versions must be plainly marked as such, and must not be \
+misrepresented as being the original software. \
+3. This notice may not be removed or altered from any source distribution. \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf0 This package contains Robert Penner's open-source easing functions.  LIcense Agreement:
+\b0 \
+\pard\pardeftab720
+\cf0 TERMS OF USE - EASING EQUATIONS\
+Open source under the BSD License. \
+Copyright 2001 Robert Penner\
+All rights reserved.\
+ \
+Redistribution and use in source and binary forms, with or without modification, \
+are permitted provided that the following conditions are met:\
+ \
+Redistributions of source code must retain the above copyright notice, this list of \
+conditions and the following disclaimer.\
+Redistributions in binary form must reproduce the above copyright notice, this list \
+of conditions and the following disclaimer in the documentation and/or other materials \
+provided with the distribution.\
+ \
+Neither the name of the author nor the names of contributors may be used to endorse \
+or promote products derived from this software without specific prior written permission.\
+ \
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY \
+EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF\
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE\
+COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,\
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE\
+GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED \
+AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED \
+OF THE POSSIBILITY OF SUCH DAMAGE. \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+What Cinch2D is:\
+Cinch2D is essentially a very fancy billboarder: it creates rectangular polygons and textures them, then manages their position and depth, giving you a very simple interface, similar to Flash's ActionScript3 Sprite class.  The main components of Cinch2D are:\
+1: The Stage class.  This is the main container for all Cinch2D stuff.  You add it to the main camera (more instructions below).\
+2: The Sprite class.  Everything you see and interact with in Cinch2D will be a Sprite class instance.  It contains methods for creating objects from images and sprite sheets, handling mouse interaction, and positioning/scaling.\
+3: The Library class.  Creates Sprites.\
+4: The Tween class.  Just like good ol' AS3 tweens.  Lets you make much more engaging UI.\
+5: The PhysicsContainer class.  Encapsulates a Farseer (Box2D) world.  Tutorial 9 has more details.\
+\
+Installation:\
+You should see a Plugins/Cinch2D folder, if not, try importing it again.\
+\
+Things you absolutely must know:\
+1: Never call Unity's standard Destroy method (e.g. Destroy(someCinchObjectInstance);).  This will usually crash the app.  Instead, call SomeCinchObjectInstance.Destroy().\
+2: Don't use the normal Unity process of creating scripts (making a new gameObject and using AddComponent<>())  Instead, use the static methods on Sprite and Library to make new Cinch2D objects.  See tutorial 5 for more details.\
+3: We had to hijack Start, Awake, Update, and LateUpdate for internal plumbing, so do this instead when dealing with Cinch2D objects:\
+* Start(), Awake(): use OnAwake() instead\
+* Update(): use OnEnterFrame(float time) instead\
+* LateUpdate(): use OnExitFrame() instead\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 4: There are a bunch of public methods that we would've preferred to make private, but couldn't.  They start with double-underscore, aren't documented, and should not be used.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+Usage:\
+There are 3 main steps:\
+1: Create a Stage subclass (see tutorial 1 for more details).  \
+2: Add your new script to the main camera.  See tutorial 8 if you are using Cinch for 2D UI over a 3D game.\
+3: Do setup stuff in your script's OnAwake() (see tutorial 1), and add Sprites to the stage (see tutorial 3) \
+\
+There is a lot more info in the tutorials.  Also, we're adding new tutorials and demos all the time, so check out pixelheavyindustries.com/Cinch2D/ for new stuff.}
